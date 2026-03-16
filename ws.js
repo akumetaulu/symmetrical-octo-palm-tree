@@ -1,18 +1,16 @@
 const net = require("net");
 const WebSocket = require("ws");
 
-const poolHost = "127.0.0.1";
-const poolPort = 8080;
-
-const wss = new WebSocket.Server({ port: 8081 });
+const wss = new WebSocket.Server({ port: 9999 });
 
 wss.on("connection", (ws) => {
-  const socket = net.connect(poolPort, poolHost);
+  const tcp = net.connect(8080, "127.0.0.1");
 
-  ws.on("message", (msg) => socket.write(msg));
-  socket.on("data", (data) => ws.send(data));
+  ws.on("message", (msg) => {
+    tcp.write(msg);
+  });
 
-  ws.on("close", () => socket.end());
+  tcp.on("data", (data) => {
+    ws.send(data.toString());
+  });
 });
-
-console.log("WebSocket proxy running on port 8081");
