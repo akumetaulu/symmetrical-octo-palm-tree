@@ -4,11 +4,11 @@ import time
 import psutil
 import signal
 
-BASH_SCRIPT = "./push"
+BASH_SCRIPT = "./gol"
 
 WINDOW = 1.0          # control window seconds
 TARGET_MIN = 85
-TARGET_MAX = 99
+TARGET_MAX = 95
 
 def get_tree_cpu_percent(proc, interval=0.2):
     """Return CPU usage of process + children"""
