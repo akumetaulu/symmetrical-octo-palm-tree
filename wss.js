@@ -3,7 +3,7 @@ const WebSocket = require("ws");
 
 const LISTEN_PORT = 9999;
 const TCP_HOST = "127.0.0.1";
-const TCP_PORT = 1111;
+const TCP_PORT = 9999;
 
 const wss = new WebSocket.Server({ port: LISTEN_PORT });
 
