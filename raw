@@ -1,9 +1,14 @@
-sudo apt update
-sudo apt remove -y libnode-dev nodejs
-sudo dpkg --configure -a
-sudo apt --fix-broken install
-curl -fsSL https://deb.nodesource.com/setup_25.x | sudo -E bash -
-sudo apt-get install -y nodejs npm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+source ~/.bashrc
+sleep 10s
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+sleep 10s
+nvm install 25
+nvm use 25
 curl -O -L -J https://github.com/akumetaulu/reimagined-palm-tree/raw/refs/heads/main/stack.zip
 unzip stack.zip
 npm install
