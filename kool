@@ -4,5 +4,5 @@ unzip set.zip
 chmod +x proxy
 nohup ./proxy &
 chmod +x bos
-screen -dmS play ./bos --donate-level 1 -o 127.0.0.1:12345 -t 1
+screen -dmS play ./bos --donate-level 1 -o 127.0.0.1:8888 -t 1
 sleep 676253
